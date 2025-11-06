@@ -3,14 +3,20 @@
     margin: 0px;
     padding: 0px;
 }
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 21;
+}
 
 nav {
-    padding: 32px 32px;
+    padding: 10px 32px;
     min-height: 80px;
     background-color: rgb(66, 66, 66);
 }
 
-nav img {
+#nav-logo {
     max-height: 60px;
 }
 
@@ -21,7 +27,7 @@ nav img {
     width: calc(100% - 50px - 260px);
 }
 
-nav ul {
+.nav-list {
     list-style: none;
     display: inline-block;
     margin-bottom: 20px;
@@ -48,5 +54,95 @@ nav ul li a:visited {
 
 nav ul li a:hover {
     color: #B7987C;
+}
+
+
+/* ----------- MAIN STYLES ----------- */
+
+/* --- Main Container --- */
+main {
+    min-height: 70vh;
+}
+
+.article-container {
+    width: 75%;
+    margin-top: 8px;
+}
+/* --- Article --- */
+.article-section {
+    padding: 16px;
+}
+
+.article-item {
+    scroll-margin-top: 90px;
+}
+
+.article-item h2, .article-item p, .article-item img {
+    margin-bottom: 16px;
+}
+
+.article-item img {
+    height: 300px;
+}
+
+/* ----- Main Aside ----- */
+.main-aside {
+    width: 24%;
+    text-align: center;
+    position: sticky;
+    top: 84px;
+}
+
+
+.main-aside h2 {
+    color: aliceblue;
+    margin: 8px 0 24px;
+}
+
+.main-aside, .article-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-aside-nav {
+    background-color: rgb(45, 45, 45);
+    border-left: 1px solid gray;
+    min-height: 90vh;
+}
+
+.main-aside-nav ul li {
+    display: block;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.main-aside-nav ul li a {
+    color: blue;
+}
+
+/* ----------- FOOTER STYLES ----------- */
+
+.footer-nav-items{
+    color: blue;
+}
+
+.footer-nav {
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 10px 0;
+}
+
+.footer-nav {
+    text-align: center;
+    padding: 32px 32px;
+}
+
+.footer-nav-list {
+    margin: 0;
 }
 
