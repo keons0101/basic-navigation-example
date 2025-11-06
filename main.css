@@ -56,6 +56,10 @@ nav ul li a:hover {
     color: #B7987C;
 }
 
+.current {
+    text-decoration: underline;
+}
+
 
 /* ----------- MAIN STYLES ----------- */
 
@@ -122,9 +126,15 @@ main {
 
 /* ----------- FOOTER STYLES ----------- */
 
-.footer-nav-items{
-    color: blue;
+footer a.footer-nav-items:link,
+footer a.footer-nav-items:visited {
+  color: rgb(172, 172, 255);
 }
+
+footer a.footer-nav-items:hover {
+  color: rgb(172, 172, 255);
+}
+
 
 .footer-nav {
     color: white;
